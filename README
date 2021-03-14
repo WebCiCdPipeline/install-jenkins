@@ -1,1 +1,2 @@
 
+docker build -t cli-tools/jenkins https://github.com/WebCiCdPipeline/install-jenkins.git#main
