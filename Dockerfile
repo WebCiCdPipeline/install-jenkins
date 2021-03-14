@@ -6,13 +6,3 @@ RUN jenkins-plugin-cli --plugins terraform:latest
 RUN jenkins-plugin-cli --plugins git:latest
 RUN jenkins-plugin-cli --plugins workflow-aggregator:latest
 RUN jenkins-plugin-cli --plugins docker-workflow:latest
-
-USER root
-
-RUN  apt-get update \
-  && apt-get install -y wget \
-  && rm -rf /var/lib/apt/lists/*
-
-RUN wget -O demo.gsh https://github.com/WebCiCdPipeline/jenkins-jobs/blob/main/scripts/demo.gsh \
-  && /var/lib/jenkins groovy demo.gsh
-USER jenkins
