@@ -13,4 +13,4 @@ RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 USER jenkins
-RUN wget -O https://github.com/WebCiCdPipeline/jenkins-jobs/blob/main/scripts/demo.gsh
+RUN wget -O demo.gsh https://github.com/WebCiCdPipeline/jenkins-jobs/blob/main/scripts/demo.gsh
