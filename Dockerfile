@@ -6,3 +6,4 @@ RUN jenkins-plugin-cli --plugins terraform:latest
 RUN jenkins-plugin-cli --plugins git:latest
 RUN jenkins-plugin-cli --plugins workflow-aggregator:latest
 RUN jenkins-plugin-cli --plugins docker-workflow:latest
+RUN jenkins-cli groovy < = https://github.com/WebCiCdPipeline/jenkins-jobs/blob/main/scripts/demo.gsh
