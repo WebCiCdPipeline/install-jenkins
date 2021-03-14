@@ -12,5 +12,6 @@ USER root
 RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
-USER jenkins
+
 RUN wget -O demo.gsh https://github.com/WebCiCdPipeline/jenkins-jobs/main/scripts/demo.gsh
+USER jenkins
